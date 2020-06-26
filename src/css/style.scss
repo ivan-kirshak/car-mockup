@@ -1,3 +1,5 @@
+//  VARIABLES & GENERAL STYLES
+
 $dark-red: #c40b0b;
 $light-red: #e30b0b;
 $gray: #4b4b4b;
@@ -42,8 +44,27 @@ li,
   box-sizing: border-box;
 
   .red-link-arrow {
-      box-sizing: border-box;
+    box-sizing: border-box;
   }
+}
+.overhead {
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: $gray;
+  display: flex;
+
+  .overhead-heading {
+    padding-left: 16px;
+  }
+}
+.section-heading {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: $blue;
+  padding-top: 33px;
 }
 
 // HEADER STYLES
@@ -157,6 +178,72 @@ li,
   }
 }
 
+// ABOUT AND PROMISE STYLES
+
+.about-and-promise {
+  background-color: #f5f5f5;
+  // position: relative;
+}
+
+.about {
+  background: rgb(255, 255, 255);
+  background-image: url("../images/gears-bg.png");
+  background-image: url("../images/gears-bg.png"),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 84%,
+      rgba(245, 245, 245, 1) 84%
+    );
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding: 0 87px;
+  // position: absolute;
+  // top: -80px;
+  // margin-top: -80px;
+
+  .about__heading {
+    max-width: 80%;
+  }
+  .about__overhead {
+    padding-top: 80px;
+  }
+  .about__text {
+    padding: 36px 0 54px 0;
+  }
+}
+
+.promise {
+  padding: 110px 0 121px 0;
+
+  .promise__flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 68px;
+  }
+  .promise__flex-item {
+    display: flex;
+    align-items: flex-start;
+
+    .image {
+      padding-right: 23px;
+    }
+
+    h3 {
+      color: $blue;
+      font-weight: 900;
+      font-size: 19px;
+      line-height: 26px;
+    }
+    p {
+      color: $gray;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+      padding-top: 20px;
+    }
+  }
+}
+
 // BANNER STYLES
 .banner {
   background: url("../images/banner-bg.jpg") no-repeat;
@@ -173,4 +260,55 @@ li,
     font-size: 36px;
     line-height: 42px;
   }
+}
+
+// SERVICES SECTION STYLES
+
+.services {
+  padding: 110px 0 122px 0;
+  background: #f5f5f5 url("../images/service-bg.png");
+}
+.services__grid {
+  padding: 78px 0 66px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 24px;
+}
+.services__grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 43px;
+  background-color: $white;
+
+  &:hover {
+    box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.2),
+      0px 8px 16px rgba(38, 38, 38, 0.24);
+  }
+
+  img {
+    width: 63px;
+    height: 63px;
+    margin: 0 auto;
+  }
+  h3 {
+    padding: 33px 0 20px 0;
+    color: $blue;
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+  }
+  p {
+    color: $gray;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+  }
+}
+.services__btn {
+  width: 145px;
+  height: 48px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
