@@ -27,11 +27,11 @@
                     <img src="images/phone-icon.svg">
                     <div class="phone-inner">
                         <p>call us</p>
-                        <p>(555) Car-Repair</p>
+                        <p><a href="tel:+15557654321">(555) 765-4321</a></p>
                     </div>
                 </div>
 
-                <a href="#form" class="red-link-btn">make an appointment
+                <a href="#formContainer" onclick="goToForm()" class="red-link-btn">make an appointment
                     <img src="images/arrow-forward.svg" class="red-link-arrow">
                 </a>
             </div>
@@ -41,24 +41,24 @@
                         <img src="images/expand-more-icon.svg" alt="show more" class="expand">
 
                         <ul class="nav-hover">
-                            <li class="nav-hover-item">One</li>
-                            <li class="nav-hover-item">Two</li>
-                            <li class="nav-hover-item">Three</li>
+                            <li class="nav-hover-item"><a href="#">One</a></li>
+                            <li class="nav-hover-item"><a href="#">Two</a></li>
+                            <li class="nav-hover-item"><a href="#">Three</a></li>
                         </ul>
                     </li>
-                    <li class="navigation__list-item">Specials</li>
-                    <li class="navigation__list-item">Estimates</li>
-                    <li class="navigation__list-item">Reviews</li>
+                    <li class="navigation__list-item"><a href="#">Specials</a></li>
+                    <li class="navigation__list-item"><a href="#">Estimates</a></li>
+                    <li class="navigation__list-item"><a href="#">Reviews</a></li>
                     <li class="navigation__list-item">Shop
                         <img src="images/expand-more-icon.svg" alt="show more" class="expand">
 
                         <ul class="nav-hover">
-                            <li class="nav-hover-item">One</li>
-                            <li class="nav-hover-item">Two</li>
-                            <li class="nav-hover-item">Three</li>
+                            <li class="nav-hover-item"><a href="#">One</a></li>
+                            <li class="nav-hover-item"><a href="#">Two</a></li>
+                            <li class="nav-hover-item"><a href="#">Three</a></li>
                         </ul>
                     </li>
-                    <li class="navigation__list-item">About</li>
+                    <li class="navigation__list-item"><a href="#">About</a></li>
                 </ul>
 
                 <div class="navigation__images">
@@ -76,7 +76,7 @@
                     Top notch service is our main auto motive
                 </h1>
 
-                <a href="#form" class="red-link-btn header__banner-btn">make an appointment
+                <a href="#formContainer" onclick="goToForm()" class="red-link-btn header__banner-btn">make an appointment
                     <img src="images/arrow-forward.svg" class="red-link-arrow">
                 </a>
             </div>
@@ -122,8 +122,8 @@
                                 <img src="images/promise-1.svg">
                             </div>
                             <div class="text">
-                                <h3>Quality service. Everytime.</h3>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                <h3 class="promise__grid-item-heading">Quality service. Everytime.</h3>
+                                <p class="promise__grid-item-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                                     corrupti quos dolores et quas.</p>
                             </div>
                         </div>
@@ -132,8 +132,8 @@
                                 <img src="images/promise-2.svg">
                             </div>
                             <div class="text">
-                                <h3>Services by certified pros</h3>
-                                <p>Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+                                <h3 class="promise__grid-item-heading">Services by certified pros</h3>
+                                <p class="promise__grid-item-text">Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
                                     eius modi tempora incidunt.</p>
 
                             </div>
@@ -143,8 +143,8 @@
                                 <img src="images/promise-3.svg">
                             </div>
                             <div class="text">
-                                <h3>Real people. Honest work.</h3>
-                                <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+                                <h3 class="promise__grid-item-heading">Real people. Honest work.</h3>
+                                <p class="promise__grid-item-text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
                                     molestiae consequatur illum.</p>
                             </div>
                         </div>
@@ -179,39 +179,39 @@
 
                 <div class="services__grid">
                     <div class="services__grid-item">
-                        <img src="images/service-icon-1.svg">
-                        <h3>Multi Point Inspections </h3>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        <img class="services__grid-item-img" src="images/service-icon-1.svg">
+                        <h3 class="services__grid-item-heading">Multi Point Inspections </h3>
+                        <p class="services__grid-item-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                             corrupti quos dolores et quas.</p>
                     </div>
                     <div class="services__grid-item">
-                        <img src="images/service-icon-2.svg">
-                        <h3>Auto Repair</h3>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        <img class="services__grid-item-img" src="images/service-icon-2.svg">
+                        <h3 class="services__grid-item-heading">Auto Repair</h3>
+                        <p class="services__grid-item-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                             corrupti quos dolores et quas.</p>
                     </div>
                     <div class="services__grid-item">
-                        <img src="images/service-icon-3.svg">
-                        <h3>Auto Maintenance</h3>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        <img class="services__grid-item-img" src="images/service-icon-3.svg">
+                        <h3 class="services__grid-item-heading">Auto Maintenance</h3>
+                        <p class="services__grid-item-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                             corrupti quos dolores et quas.</p>
                     </div>
                     <div class="services__grid-item">
-                        <img src="images/service-icon-4.svg">
-                        <h3>Tires</h3>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        <img class="services__grid-item-img" src="images/service-icon-4.svg">
+                        <h3 class="services__grid-item-heading">Tires</h3>
+                        <p class="services__grid-item-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                             corrupti quos dolores et quas.</p>
                     </div>
                     <div class="services__grid-item">
-                        <img src="images/service-icon-5.svg">
-                        <h3>Service Warranty</h3>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        <img class="services__grid-item-img" src="images/service-icon-5.svg">
+                        <h3 class="services__grid-item-heading">Service Warranty</h3>
+                        <p class="services__grid-item-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                             corrupti quos dolores et quas.</p>
                     </div>
                     <div class="services__grid-item">
-                        <img src="images/service-icon-6.svg">
-                        <h3>Shop Online</h3>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        <img class="services__grid-item-img" src="images/service-icon-6.svg">
+                        <h3 class="services__grid-item-heading">Shop Online</h3>
+                        <p class="services__grid-item-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                             corrupti quos dolores et quas.</p>
                     </div>
                 </div>
@@ -223,7 +223,7 @@
             </div>
         </section>
 
-        <section class="form" id="form">
+        <section class="form" id="formContainer">
             <div class="container">
                 <div class="form__inner">
                     <div class="form__inner-container">
@@ -238,11 +238,10 @@
                                 <input type="text" class="input" placeholder="Select Service" id="selectInput">
 
                                 <textarea rows="4" cols="50" class="input textarea" name="comment"
-                                    form="appointment-form">
-                                    Tell us about the car needing service(s)
+                                    form="appointment-form">Tell us about the car needing service(s)
                                 </textarea>
 
-                                <button type="submit" href="#" class="red-link-btn">make an appointment
+                                <button type="submit" class="red-link-btn">make an appointment
                                     <img src="images/arrow-forward.svg" class="red-link-arrow">
                                 </button>
                             </div>
@@ -359,7 +358,7 @@
                     <div class="impact__grid-item last-grid-item">
                         <h3>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h3>
 
-                        <a href="#form" class="red-link-btn">make an appointment
+                        <a href="#formContainer" onclick="goToForm()" class="red-link-btn">make an appointment
                             <img src="images/arrow-forward.svg" class="red-link-arrow">
                         </a>
                     </div>
@@ -374,7 +373,7 @@
             <div class="footer__inner">
                 <div class="footer__inner-left">
                     <img src="images/foot-logo.svg">
-                    <p>This is a blurb about the company sed do eiusmod tempor incididunt ut labore et dolore ex magna
+                    <p class="footer__inner-left-p">This is a blurb about the company sed do eiusmod tempor incididunt ut labore et dolore ex magna
                         aliqua.
                     </p>
                     <div class="footer__inner-icons">
@@ -385,40 +384,40 @@
                     </div>
                 </div>
                 <div class="footer__inner-centre">
-                    <h3 class="footer__inner-heading">EXPLORE LINKS</h3>
+                    <h3 class="footer__inner-centre-heading">EXPLORE LINKS</h3>
                     <div class="footer__centre-flex">
-                        <ul>
-                            <li class="footer__li">About</li>
-                            <li class="footer__li">Services</li>
-                            <li class="footer__li">Specials</li>
-                            <li class="footer__li">Estimates</li>
+                        <ul class="footer__inner-centre-ul">
+                            <li class="footer__inner-centre-li"><a href="#">About</a></li>
+                            <li class="footer__inner-centre-li"><a href="#">Services</a></li>
+                            <li class="footer__inner-centre-li"><a href="#">Specials</a></li>
+                            <li class="footer__inner-centre-li"><a href="#">Estimates</a></li>
                         </ul>
-                        <ul>                             
-                            <li class="footer__li">Reviews</li>
-                            <li class="footer__li">Shop</li>
-                            <li class="footer__li">Careers</li>
-                            <li class="footer__li">FAQs</li>
+                        <ul class="footer__inner-centre-ul">                    
+                            <li class="footer__inner-centre-li"><a href="#">Reviews</a></li>
+                            <li class="footer__inner-centre-li"><a href="#">Shop</a></li>
+                            <li class="footer__inner-centre-li"><a href="#">Careers</a></li>
+                            <li class="footer__inner-centre-li"><a href="#">FAQs</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer__inner-right">
-                    <h3>CONTACT</h3>
-                    <div>
+                    <h3 class="footer__inner-right-heading">CONTACT</h3>
+                    <div class="footer__inner-right-div">
                         <img src="images/location.svg" alt="">
-                        <p>321 Pikes Place Parkway
+                        <p class="footer__inner-right-p">321 Pikes Place Parkway
                             Seattle, WA 54321</p>
                     </div>
-                    <div>
+                    <div class="footer__inner-right-div">
                         <img src="images/smartphone.svg" alt="">
-                        <p>(555) 765-4321</p>
+                        <p class="footer__inner-right-p"><a href="tel:+15557654321">(555) 765-4321</a></p>
                     </div>
-                    <div>
+                    <div class="footer__inner-right-div">
                         <img src="images/email.svg" alt="">
-                        <p>Info@company.com</p>
+                        <p class="footer__inner-right-p"><a href="mailto:Info@company.com">Info@company.com</a></p>
                     </div>
-                    <div>
+                    <div class="footer__inner-right-div">
                         <img src="images/timer.svg" alt="">
-                        <p>Mon - Sat: 7:000 am - 6:00 pm</p>
+                        <p class="footer__inner-right-p">Mon - Sat: 7:000 am - 6:00 pm</p>
                     </div>
                 </div>
             </div>
@@ -428,7 +427,7 @@
     <div class="under-foot">
         <div class="container">
             <h4>Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod</h4>
-            <h4>© 2018 Company. <span>Privacy Policy | Terms & Conditions</span></h4>
+            <h4>© 2018 Company. <span><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></span></h4>
         </div>
     </div>
 

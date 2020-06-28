@@ -15,6 +15,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 li {
   list-style: none;
@@ -235,13 +236,13 @@ button[type="submit"] {
       padding-right: 23px;
     }
 
-    h3 {
+    .promise__grid-item-heading {
       color: $blue;
       font-weight: 900;
       font-size: 19px;
       line-height: 26px;
     }
-    p {
+    .promise__grid-item-text {
       color: $gray;
       font-size: 16px;
       line-height: 24px;
@@ -292,21 +293,22 @@ button[type="submit"] {
   &:hover {
     box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.2),
       0px 8px 16px rgba(38, 38, 38, 0.24);
+      cursor: pointer;
   }
 
-  img {
+  .services__grid-item-img {
     width: 63px;
     height: 63px;
     margin: 0 auto;
   }
-  h3 {
+  .services__grid-item-heading {
     padding: 33px 0 20px 0;
     color: $blue;
     font-weight: 900;
     font-size: 19px;
     line-height: 26px;
   }
-  p {
+  .services__grid-item-text {
     color: $gray;
     font-size: 16px;
     line-height: 24px;
@@ -524,7 +526,7 @@ button[type="submit"] {
 .footer__inner-left {
   max-width: 25%;
 
-  p {
+  .footer__inner-left-p {
     font-size: 14px;
     line-height: 22px;
     letter-spacing: 0.15px;
@@ -539,11 +541,11 @@ button[type="submit"] {
 .footer__inner-centre {
   max-width: 45%;
 
-  .footer__inner-heading {
+  .footer__inner-centre-heading {
     padding-bottom: 28px;
   }
-  .footer__inner-heading,
-  .footer__li {
+  .footer__inner-centre-heading,
+  .footer__inner-centre-li {
     color: $gray;
     font-size: 14px;
     line-height: 22px;
@@ -554,7 +556,7 @@ button[type="submit"] {
     display: flex;
     justify-content: space-around;
 
-    .footer__li {
+    .footer__inner-centre-li {
       padding: 11px 37px 11px 0;
     }
   }
@@ -562,7 +564,7 @@ button[type="submit"] {
 .footer__inner-right {
   max-width: 30%;
 
-  h3 {
+  .footer__inner-right-heading {
     color: $gray;
     font-size: 14px;
     line-height: 22px;
@@ -570,11 +572,11 @@ button[type="submit"] {
     padding-bottom: 20px;
   }
 
-  div {
+  .footer__inner-right-div {
     display: flex;
     align-items: center;
     padding: 8px;
-    p {
+    .footer__inner-right-p {
       color: $gray;
       font-size: 14px;
       line-height: 20px;
