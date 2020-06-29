@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -55,7 +59,8 @@ li,
           box-sizing: border-box;
 }
 
-button[type="submit"] {
+button[type="submit"],
+button[type="button"] {
   border: none;
   outline: none;
   cursor: pointer;
@@ -441,6 +446,11 @@ button[type="submit"] {
   outline: none;
 }
 
+.form__inner-container .input .error {
+  color: #c40b0b;
+  border: 2px solid #e30b0b;
+}
+
 .form__inner-container .textarea {
   margin: 22px 0 30px 0;
   -ms-grid-column: 1;
@@ -491,6 +501,48 @@ button[type="submit"] {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84%, #fff), color-stop(84%, #f5f5f5));
   background: linear-gradient(180deg, #fff 84%, #f5f5f5 84%);
   padding: 100px 87px 0 87px;
+}
+
+.gallery .gallery__slider-controls {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.gallery .gallery__slider-btn {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #02133c;
+  padding: 15px 35px;
+  border-bottom: 1px solid #d5d5d5;
+  background: transparent;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.gallery .gallery__slider-btn .is-selected {
+  border-bottom: 4px solid #c40b0b;
+}
+
+.gallery .green {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #21c613;
+}
+
+.gallery .gray {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #d5d5d5;
 }
 
 .customers {

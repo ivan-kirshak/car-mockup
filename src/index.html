@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../flickity/flickity.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -235,7 +236,7 @@
                                 <input type="text" class="input" placeholder="Name" id="nameInput">
                                 <input type="text" class="input" placeholder="Email" id="emailInput">
                                 <input type="text" class="input" placeholder="Phone Number" id="phoneInput">
-                                <input type="text" class="input" placeholder="Select Service" id="selectInput">
+                                <input type="text" class="input" placeholder="Select Service">
 
                                 <textarea rows="4" cols="50" class="input textarea" name="comment"
                                     form="appointment-form">Tell us about the car needing service(s)
@@ -271,6 +272,21 @@
                     <h1 class="section-heading">
                         Check out our hard workers
                     </h1>
+
+                    
+                    <div class="gallery__slider-controls">
+                        <button type="button" class="gallery__slider-btn">Gallery</button>
+                        <button type="button" class="gallery__slider-btn ">Live stream: Bay 1 <span class="green"></span></button>
+                        <button type="button" class="gallery__slider-btn ">Live stream: Bay 2 <span class="green"></span></button>
+                        <button type="button" class="gallery__slider-btn ">Live stream: Bay 3 <span class="gray"></span></button>
+                    </div>
+
+                    <div class="gallery__slider">
+                        <img src="images/gallery-img.png" alt="gallery live" class="gallery__slider-cell">
+                        <img src="images/gallery-img.png" alt="gallery live" class="gallery__slider-cell is-selected">
+                        <img src="images/gallery-img.png" alt="gallery live" class="gallery__slider-cell">
+                        <img src="images/gallery-img.png" alt="gallery live" class="gallery__slider-cell">
+                    </div>
                 </div>
 
                 <div class="customers">
@@ -431,6 +447,7 @@
         </div>
     </div>
 
+    <script src="../flickity/flickity.js"></script>
     <script src="js/main.js"></script>
 </body>
 
